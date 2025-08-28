@@ -33,7 +33,7 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
     height: auto;
 }
 
@@ -67,7 +67,7 @@ div {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 30px 7% 20px;
+    padding: 30px 10% 20px;
     background-color: #fff;
     /* border: 2px solid #5025D1; */
 }
@@ -95,7 +95,7 @@ div {
 
 
 .formclass {
-    background-color: #cfcfcf;
+    background-color: #B7B7B8;
     border: 1px solid #000;
     /* Opacity: 0.8; */
     font-size: clamp(14px, 1.5vw, 100px);
@@ -251,7 +251,7 @@ form h2 {
     background: #CFCFCF;
     border: 1px solid #000;
     border-radius: 10px;
-    width: 60vw;
+    width: 75vw;
     min-width: 100%;
     gap: 0px 4px;
 
