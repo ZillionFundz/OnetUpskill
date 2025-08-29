@@ -304,7 +304,7 @@ form h2 {
 }
 
 .legend-box {
-    margin: 50px auto 10px;
+    margin: 40px auto 10px;
     padding: 10px;
     /* border: 1px dashed red; */
     border-radius: 10px;
@@ -318,8 +318,8 @@ form h2 {
 
 .legend-box span h2 {
     font-size: clamp(16px, 1.5vw, 100px);
-    margin: 20px auto;
-    padding: 10px;
+    margin: 10px auto;
+    padding: 5px;
     text-align: center;
     color: #7d7d96;
 }
@@ -428,13 +428,13 @@ legend {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 10px 5px;
+    margin: 10px 10px 5px;
 }
 
 
 
 .recomend-box h3 {
-    margin: 10px auto;
+    margin: 0px auto 5px;
     text-align: center;
     font-size: clamp(14px, 1.2vw, 100px);
 }
