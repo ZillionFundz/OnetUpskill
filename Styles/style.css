@@ -68,7 +68,7 @@ div {
     align-items: center;
     flex-direction: column;
     padding: 30px 10% 20px;
-    background-color: #DCD3F6;
+    background-color: #dad8d8;
     /* border: 2px solid #5025D1; */
 }
 
@@ -138,18 +138,19 @@ div {
     color: #a5a4a4;
 }
 
-.menuclass {
-    font-size: clamp(14px, 1.5vw, 100px);
-    width: 100%;
-    height: 12vh;
+.user-comment {
+    font-size: clamp(16px, 1.5vw, 100px);
+    width: 75vw;
+    height: 14vh;
     border-radius: 4px;
     background: none;
     /* padding: 5px; */
     border: 1px solid rgb(117, 116, 116);
-    padding-left: 10px;
     margin: 4px 0px;
+    padding: 10px;
+    line-height: 4.5vh;
     /* color: rgb(94, 92, 92); */
-    color: rgb(0, 0, 0);
+    color: #3b3b3b;
     background: rgba(160, 160, 161, 0.219);
 }
 
@@ -201,7 +202,7 @@ form h2 {
 
 .questionaire {
 
-    /* background-color: #B5C0C9; */
+    background-color: #c1c2c4;
     border: 1px solid #000;
     /* Opacity: 0.8; */
     font-size: clamp(14px, 1.5vw, 100px);
@@ -297,7 +298,7 @@ form h2 {
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-
+    text-align: right;
     font-size: clamp(16px, 1.5vw, 100px);
 }
 
@@ -312,7 +313,6 @@ form h2 {
 .legend-box {
     margin: 40px auto 10px;
     padding: 10px;
-    /* border: 1px dashed red; */
     border-radius: 10px;
     background: #cfcfcf;
     font-size: clamp(12px, 1.5vw, 100px);
@@ -360,7 +360,6 @@ legend {
     text-transform: uppercase;
     font-weight: bold;
     padding: 5px 10px;
-    /* border: 1px dashed red; */
     border-radius: 10px;
     border-bottom: 4px solid #000;
     background: #0166FF;
@@ -372,10 +371,10 @@ legend {
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     justify-content: center;
     /* background: #0166FF; */
-    /* border: 1px dashed red; */
     margin: 0px;
     padding: 50px 5px 5px;
     gap: 2px;
+    /* outline: none; */
 }
 
 .option-box {
@@ -456,6 +455,10 @@ legend {
 }
 
 .comment-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 5px auto;
 }
 
@@ -484,69 +487,28 @@ background-color: #B5C0C9;
 }
 
 
-.btn-box button {
+.btn-box .cta-button {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     border: none;
+    font-size: clamp(18px, 1.8vw, 100px);
     /* box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.4); */
     box-shadow: 0 5px 5px #000;
     border-radius: 20px;
-    background-color: #0166FF;
-    color: #fff;
-    width: 65%;
-    height: 7vh;
-    margin: 10px auto 20px;
-    /* padding-left: 0px; */
-    overflow: hidden;
-    position: relative;
-    transition: .1s;
-}
-
-
-.btn-box hr {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
-
-
-.btn-box button:hover {
     background-color: #5025D1;
-    color: #000;
-    box-shadow: 0px 2px 10px 2px rgba(255, 255, 255, 0.4);
-    cursor: pointer;
+    color: #fff;
+    margin: 10px auto 20px;
+    padding: 1.8vh 10vw;
+    overflow: hidden;
+    position: relative;
+    /* transition: .1s; */
 }
 
-.btn-box button:active {
-    box-shadow: 0 2px 5px #000;
-}
-
-/* .btn-box button span {
-    height: 1px;
-    width: 1px;
-    display: block;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    animation: ripple .3s;
-}
-
-
-@keyframes ripple {
-    to {
-        opacity: 0;
-        transform: scale(200);
-    }
-} */
-
-
-/* Add this to your CSS file */
-
-.btn-box .cta-button {
+/* .btn-box .cta-button {
     position: relative;
     overflow: hidden;
-}
+} */
 
 .btn-box .cta-button span {
     position: absolute;
@@ -569,6 +531,28 @@ background-color: #B5C0C9;
         opacity: 0;
     }
 }
+
+
+.btn-box hr {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+.btn-box button:hover {
+    background-color: #0166FF;
+    color: #000;
+    box-shadow: 0px 2px 10px 2px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.btn-box button:active {
+    box-shadow: 0 2px 5px #000;
+}
+
+
+
 
 
 .cta-button::after {
@@ -638,7 +622,6 @@ background-color: #B5C0C9;
         list-style: none;
         margin: 0px;
         padding: 0px;
-        /* background: red; */
         width: 100%;
     }
 
