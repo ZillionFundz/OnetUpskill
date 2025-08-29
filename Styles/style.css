@@ -136,7 +136,7 @@ div {
 .menuclass {
     font-size: clamp(14px, 1.5vw, 100px);
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     border-radius: 4px;
     background: none;
     padding: 5px;
@@ -304,7 +304,7 @@ form h2 {
 }
 
 .legend-box {
-    margin: 50px auto 20px;
+    margin: 50px auto 10px;
     padding: 10px;
     /* border: 1px dashed red; */
     border-radius: 10px;
@@ -417,7 +417,7 @@ legend {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 10px;
+    margin: 20px 10px 5px;
 }
 
 .recomend {
@@ -430,7 +430,9 @@ legend {
 }
 
 .recomend-box h3 {
-    margin: 10px auto 25px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: clamp(14px, 1.2vw, 100px);
 }
 
 .recomend-box input {
@@ -440,6 +442,17 @@ legend {
 }
 
 .recomend-box label {
+    font-size: clamp(16px, 1.2vw, 100px);
+}
+
+.comment-area {
+    margin: 5px;
+}
+
+.comment-text p {
+    margin: auto;
+    padding: au;
+    text-align: center;
     font-size: clamp(16px, 1.2vw, 100px);
 }
 
@@ -455,7 +468,7 @@ background-color: #B5C0C9;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px auto 2px;
+    margin: 5px auto 2px;
     padding: 10px;
     width: 100%;
 }
@@ -473,7 +486,7 @@ background-color: #B5C0C9;
     color: #fff;
     width: 65%;
     height: 7vh;
-    margin: 20px 2px;
+    margin: 10px auto 20px;
     /* padding-left: 0px; */
     overflow: hidden;
     position: relative;
@@ -652,4 +665,3 @@ background-color: #B5C0C9;
         cursor: pointer;
     }
 }
-
