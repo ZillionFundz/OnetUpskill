@@ -384,6 +384,20 @@ legend {
     border-radius: 5px;
 }
 
+.recomend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5px; */
+    /* margin: 2px; */
+    padding: 5px;
+    background: #CFCFCF;
+    border: 1px dashed #000;
+    border-radius: 5px;
+
+}
+
+
 .option-box label {
     font-size: clamp(14px, 1.2vw, 100px);
     margin: 0px;
@@ -396,6 +410,37 @@ legend {
     margin: 0px;
     padding: 0px;
     box-shadow: 0 2px 3px #000;
+}
+
+.recomend-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+.recomend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    gap: 5px;
+    margin: 10px auto;
+}
+
+.recomend-box h3 {
+    margin: 10px auto 25px;
+}
+
+.recomend-box input {
+    min-width: 1.2rem;
+    height: 1.3rem;
+    margin: 0px 20px 0px 0px;
+}
+
+.recomend-box label {
+    font-size: clamp(16px, 1.2vw, 100px);
 }
 
 
