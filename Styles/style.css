@@ -549,7 +549,7 @@ background-color: #B5C0C9;
     border-top: 4px solid #0166FF;
     font-size: 16px;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     position: sticky;
     bottom: 0;
     margin: 0px;
@@ -652,3 +652,4 @@ background-color: #B5C0C9;
         cursor: pointer;
     }
 }
+
