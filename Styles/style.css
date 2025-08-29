@@ -139,7 +139,7 @@ div {
     height: 12vh;
     border-radius: 4px;
     background: none;
-    padding: 5px;
+    /* padding: 5px; */
     border: 1px solid rgb(117, 116, 116);
     padding-left: 10px;
     margin: 4px 0px;
@@ -384,15 +384,26 @@ legend {
     border-radius: 5px;
 }
 
+
+.recomend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: 10px auto;
+}
+
+
 .recomend-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* gap: 5px; */
     /* margin: 2px; */
-    padding: 5px;
+    padding: 5px 10px;
     background: #CFCFCF;
-    border: 1px dashed #000;
+    /* border: 1px dashed #000; */
     border-radius: 5px;
 
 }
@@ -420,14 +431,7 @@ legend {
     margin: 20px 10px 5px;
 }
 
-.recomend {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    gap: 5px;
-    margin: 10px auto;
-}
+
 
 .recomend-box h3 {
     margin: 10px auto;
@@ -665,5 +669,3 @@ background-color: #B5C0C9;
         cursor: pointer;
     }
 }
-
-
