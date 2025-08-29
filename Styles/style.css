@@ -397,6 +397,7 @@ legend {
     align-items: center;
     gap: 2px;
     margin: 10px auto;
+    width: 50vw;
 }
 
 
