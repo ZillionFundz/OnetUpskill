@@ -87,25 +87,36 @@ div {
 }
 
 .notification-icon {
-    font-size: 20px;
-    display: inline-block;
+    /* font-size: 20px; */
+    /* display: inline-block; */
     animation: pulseGlow 1.5s infinite ease-in-out;
     margin: 4px;
-    padding: 2px;
-    /* border: 0.5px solid#000; */
-    border-radius: 50%;
-    /* background: #f00; */
+    padding: 5px;
     position: absolute;
     z-index: 0;
-    transform: translate(-50%, -50%);
-    right: 2vw;
-    top: 0.5vh;
+    /* transform: translate(-50%, -50%); */
+    left: 32vw;
+    top: 1vh;
+    /* rotate: -35deg; */
+}
+
+.notification-icon button {
+    font-size: clamp(10px, 1.2vw, 100px);
+    margin: 2px 0px 0px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    background: #5025D1;
+    color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 255, 34, 0.65);
+    display: inline-block;
+    animation: pulseGlow 1.5s infinite ease-in-out;
 }
 
 @keyframes pulseGlow {
     0% {
         transform: scale(1);
-        text-shadow: 0 0 0px rgba(0, 255, 34, 0.65);
+        text-shadow: 0 0 0px rgba(0, 255, 34, 0.322);
     }
 
     50% {
@@ -115,7 +126,7 @@ div {
 
     100% {
         transform: scale(1);
-        text-shadow: 0 0 0px rgba(255, 215, 0, 0.6);
+        text-shadow: 0 0 0px rgba(0, 255, 34, 0.322);
     }
 }
 
@@ -272,6 +283,68 @@ form h2 {
     padding: 0px;
 }
 
+.color-codes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    position: absolute;
+    /* background: #0166FF; */
+    background: #5025D1;
+    padding: 4px 10px 4px 5px;
+    border: 0.5px dashed #000;
+    border-right: 0.5px none;
+    border-radius: 10px 0px 0px 10px;
+    gap: 10px;
+    top: 15px;
+    right: -1px;
+}
+
+.avail-item-color,
+.unavail-item-color {
+    margin: 0px;
+    padding: 12px;
+    border-radius: 50%;
+    /* background: #6ac4b0; */
+    /* border: 0.5px dashed #000; */
+    box-shadow: 0 4px 3px 1px rgba(71, 71, 71, 0.6);
+    position: relative;
+}
+
+.avail-item-color {
+    background: #6ac4b0;
+}
+
+.unavail-item-color {
+    background: #ca9faa;
+}
+
+.avail-item-color:hover,
+.unavail-item-color:hover {
+    margin: 0px;
+    padding: 2px;
+    border-radius: 10px;
+    background: #0166FF;
+    border: 0.5px dashed #000;
+    cursor: pointer;
+    /* border: 0.5px dashed #000; */
+    box-shadow: 0 4px 4px 2px rgba(71, 71, 71, 0.8);
+    position: relative;
+    color: #fff;
+}
+
+.avail-item-color:hover::after {
+    content: "Available Courses.";
+    margin: auto;
+    padding: 10px;
+}
+
+.unavail-item-color:hover::after {
+    content: "Unavailable Courses.";
+    margin: auto;
+    padding: 10px;
+}
+
 
 .control-panel {
     display: flex;
@@ -323,7 +396,7 @@ form h2 {
     padding: 5px 10px;
     background-color: #e3e2e4;
     border-radius: 10px;
-    border-right: 4px solid #03a07e;
+    border-right: 4px solid #6ac4b0;
     text-align: right;
     font-size: clamp(16px, 1.5vw, 100px);
 }
@@ -335,7 +408,7 @@ form h2 {
     padding: 5px 10px;
     background-color: #e3e2e4;
     border-radius: 10px;
-    border-right: 4px solid #e6456d;
+    border-right: 4px solid #ca9faa;
     text-align: right;
     font-size: clamp(16px, 1.5vw, 100px);
 }
