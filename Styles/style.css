@@ -164,6 +164,7 @@ div {
     border: 1px solid rgb(80, 80, 80);
     padding-left: 10px;
     margin: 4px 0px;
+    color: #585858;
 }
 
 .forminput::placeholder {
@@ -182,7 +183,7 @@ div {
     padding-left: 10px;
     margin: 4px 0px;
     /* color: rgb(94, 92, 92); */
-    color: #a5a4a4;
+    color: #585858;
 }
 
 .user-comment {

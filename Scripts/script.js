@@ -1,13 +1,3 @@
-// $(document).ready(function () {
-//     $('button').click(function (e) {
-//         $(this).append('<span></span>');
-//         var top = e.pageY;
-//         var left = e.pageX;
-//         $(this).children().offset({ top: top, left: left }).fadeOut(500);
-//     });
-// })
-
-
 
 
 // ...existing code...
@@ -28,4 +18,51 @@ document.querySelectorAll('.cta-button').forEach(button => {
         }, 600);
     });
 });
+// ...existing code...
+
+
+// document.getElementById('signupForm').addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     fetch('http://localhost:3000/submit', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({
+//             fullname: document.getElementById('fullname').value,
+//             email: document.getElementById('email').value,
+//             phone: document.getElementById('phone').value,
+//             experience: document.getElementById('menu').value
+//             // Add other fields as needed
+//         })
+//     })
+//         .then(res => res.text())
+//         .then(data => alert(data));
+// });
+
+
+// ...existing code...
+document.getElementById('signupForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get selected course (radio button)
+    const course = document.querySelector('input[name="course"]:checked')?.value || "";
+
+    // Get all checked utilities (checkboxes)
+    const utilities = Array.from(document.querySelectorAll('input[name="utilities"]:checked')).map(cb => cb.value);
+
+    fetch('http://localhost:3000/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            fullname: document.getElementById('fullname').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            experience: document.getElementById('menu').value,
+            course: course,
+            utilities: utilities
+        })
+    })
+        .then(res => res.text())
+        .then(data => alert(data));
+});
+
 // ...existing code...
