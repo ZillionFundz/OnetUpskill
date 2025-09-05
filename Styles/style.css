@@ -139,7 +139,7 @@ div {
     border-radius: 25px 25px 10px 10px;
     border-top: 4px solid #0166FF;
     margin: 10px auto 25px;
-    padding: 0px 10% 20px;
+    padding: 0px 7% 20px;
     max-width: 100vw;
     min-width: 100%;
     position: relative;
@@ -770,4 +770,5 @@ legend {
         border-radius: 10px;
         z-index: 1;
     }
+
 }
