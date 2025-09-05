@@ -66,7 +66,7 @@ div {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 30px 7% 20px;
+    padding: 30px 10vw 20px;
     background-color: #dad8d8;
     /* border: 2px solid #5025D1; */
 }
@@ -196,7 +196,7 @@ div {
     border: 1px solid rgb(117, 116, 116);
     margin: 4px 0px;
     padding: 5px 8px;
-    line-height: 4vh;
+    line-height: 22px;
     /* color: rgb(94, 92, 92); */
     color: #3b3b3b;
     background: rgba(160, 160, 161, 0.219);
@@ -747,7 +747,7 @@ legend {
         border: 1px solid rgb(117, 116, 116);
         margin: 4px 0px;
         padding: 5px;
-        line-height: 3vh;
+        line-height: 22px;
         /* color: rgb(94, 92, 92); */
         color: #3b3b3b;
         background: rgba(160, 160, 161, 0.219);
@@ -770,6 +770,4 @@ legend {
         border-radius: 10px;
         z-index: 1;
     }
-
 }
-
