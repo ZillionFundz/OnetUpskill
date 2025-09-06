@@ -61,7 +61,7 @@ div {
 }
 
 .top-area {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +155,7 @@ div {
 }
 
 .forminput {
-    font-size: clamp(16px, 1.8vw, 100px);
+    font-size: clamp(14px, 1.5vw, 100px);
     height: 5.8vh;
     width: 100%;
     border-radius: 4px;
@@ -169,7 +169,7 @@ div {
 
 .forminput::placeholder {
     color: #b8b7b7;
-    font-size: clamp(14px, 1.8vw, 100px);
+    font-size: clamp(14px, 1.5vw, 100px);
 }
 
 .menu {
@@ -187,7 +187,7 @@ div {
 }
 
 .user-comment {
-    font-size: clamp(16px, 1.5vw, 100px);
+    font-size: clamp(14px, 1.5vw, 100px);
     width: 75vw;
     height: 14vh;
     border-radius: 4px;
@@ -227,7 +227,7 @@ form h2 {
 }
 
 .bottom-area {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
