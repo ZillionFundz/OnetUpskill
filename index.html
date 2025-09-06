@@ -12,228 +12,232 @@
 <body class="bodyAll">
 
     <div class="container">
-        <div class="top-area">
-            <h1>Open Network Technology</h1>
-            <form id="signupForm" action="index.html" class="formclass">
-                <div class="notification-icon">
-                    <button id="read-me" type="button">
-                        Read Me!🔔
-                    </button>
+        <form id="signupForm" action="index.html">
+            <div class="top-area">
+                <h1>Open Network Technology</h1>
+                <div class="formclass"><!--FORM INPUT FIELDS START HERE...! -->
+                    <div class="notification-icon">
+                        <button id="read-me" type="button">
+                            Read Me!🔔
+                        </button>
 
+                    </div>
+                    <div class="top-title-box">
+                        <h2>Signup</h2>
+                        <img src="./Images/OnetLogo5-2.png" alt="">
+                    </div>
+                    <label for="Name">Full Name</label><br />
+                    <input type="text" id="fullname" name="name" placeholder="First name, Second name, Surname."
+                        required class="forminput">
+                    <br /><br />
+                    <label for="Email">Email</label><br />
+                    <input type="email" id="email" name="email" placeholder="Enter your email  here!" required
+                        class="forminput"><br /><br />
+                    <label for="Phone">Phone Number</label><br />
+                    <input type="text" id="phone" name="phone" placeholder="Enter your Whats'App Line here!" required
+                        class="forminput"><br /><br />
+                    <label for="Which option">Your Tech Experience?</label><br />
+                    <select id="menu" name="menu" class="menu">
+                        <option value="newbie">Newbie</option>
+                        <option value="experienced">Experienced</option>
+                        <option value="advanced">Advanced</option>
+                    </select><br /><br />
+                    <!-- <div class="btn-box">
+                        <button type="submit" class="cta-button">
+                            Submit
+                        </button>
+                        <hr> <br /><br />
+                    </div> -->
+                </div> <!--FORM INPUT FIELDS END HERE...! -->
+                <div class="star">
+                    <hr>
+                    💢
+                    <hr>
                 </div>
-                <div class="top-title-box">
-                    <h2>Signup</h2>
-                    <img src="./Images/OnetLogo5-2.png" alt="">
-                </div>
-                <label for="Name">Full Name</label><br />
-                <input type="text" id="fullname" name="name" placeholder="First name, Second name, Surname." required
-                    class="forminput">
-                <br /><br />
-                <label for="Email">Email</label><br />
-                <input type="email" id="email" name="email" placeholder="Enter your email  here!" required
-                    class="forminput"><br /><br />
-                <label for="Phone">Phone Number</label><br />
-                <input type="text" id="phone" name="phone" placeholder="Enter your Whats'App Line here!" required
-                    class="forminput"><br /><br />
-                <label for="Which option">Your Tech Experience?</label><br />
-                <select id="menu" name="menu" class="menu">
-                    <option value="newbie">Newbie</option>
-                    <option value="experienced">Experienced</option>
-                    <option value="advanced">Advanced</option>
-                </select><br /><br />
-                <div class="btn-box">
-                    <button type="submit" class="cta-button">
-                        Submit
-                    </button>
-                    <hr> <br /><br />
-                </div>
-            </form>
-            <div class="star">
-                <hr>
-                💢
-                <hr>
             </div>
-        </div>
-        <div class="bottom-area">
-            <div class="bottom-title-box">
-                <span>Kindly read carefully and fill out the information needed below<br />
-                    to proceed with your Course Registration. <br /> (One Course Per Session)
+            <div class="bottom-area">
+                <div class="bottom-title-box">
+                    <span>Kindly read carefully and fill out the information needed below<br />
+                        to proceed with your Course Registration. <br /> (One Course Per Session)
 
-                </span>
-            </div>
-            <div class="questionaire">
-                <div class="color-codes">
-                    <div class="avail-item-color">
-                    </div>
-                    <div class="unavail-item-color">
-                    </div>
+                    </span>
                 </div>
-                <div class="control-panel">
-                    <h3>Chose a Course</h3>
-                    <ul>
-                        <div class="listed-courses">
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="UI/UX Design" required>
-                                    <label>UI/UX Design</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Crypto Concepts">
-                                    <label>Crypto Concepts</label>
-                                </div>
-                            </li>
-                            <li class="unit-unavail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Digital Marketting">
-                                    <label>Digital Marketting</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Web Development">
-                                    <label>Web Development</label>
-                                </div>
-                            </li>
-                            <li class="unit-unavail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Public Speaking">
-                                    <label>Public Speaking</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="V.B. Programming">
-                                    <label>V.B. Programming</label>
-                                </div>
-                            </li>
-                            <li class="unit-unavail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Blockchains">
-                                    <label>Blockchains</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Database (DBMS)">
-                                    <label>Database (DBMS)</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Project Management">
-                                    <label>Project Management</label>
-                                </div>
-                            </li>
-                            <li class="unit-avail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Video Editing (MM)">
-                                    <label>Video Editing (MM)</label>
-                                </div>
-                            </li>
-                            <li class="unit-unavail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="Graphics">
-                                    <label>Graphics</label>
-                                </div>
-                            </li>
-                            <li class="unit-unavail-item">
-                                <div class="item-grouping">
-                                    <input type="radio" name="course" value="CRM & HRM">
-                                    <label>CRM & HRM</label>
-                                </div>
-                            </li>
+                <div class="questionaire">
+                    <div class="color-codes">
+                        <div class="avail-item-color">
                         </div>
-                    </ul>
-                    <div class="legend-box">
-                        <span class="review-more">
-                            <h2> Which utilities would you love to see on ONET upon launch?</h2>
-                        </span>
-                        <fieldset>
-                            <legend>Recommend:👇</legend>
-                            <div class="legend-options">
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="Staking"><label>Staking</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="Quiz [T2E]"><label>Quiz
-                                        [T2E]</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="Adverts"><label>Adverts</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value=""><label>Swapping</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="POW (POG)"><label>POW
-                                        (POG)</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="D-Apps"><label>D-Apps</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value=""><label>Marketing</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="DeFi"><label>DeFi</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="DAO"><label>DAO</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="Mining (P2E)"><label>Mining
-                                        (P2E)</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities"
-                                        value="Hackathon"><label>Hackathon</label><br />
-                                </div>
-                                <div class="option-box">
-                                    <input type="checkbox" name="utilities" value="Shows"><label>Shows</label><br />
-                                </div>
+                        <div class="unavail-item-color">
+                        </div>
+                    </div>
+                    <div class="control-panel">
+                        <h3>Chose a Course</h3>
+                        <ul>
+                            <div class="listed-courses">
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="UI/UX Design" required>
+                                        <label>UI/UX Design</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Crypto Concepts">
+                                        <label>Crypto Concepts</label>
+                                    </div>
+                                </li>
+                                <li class="unit-unavail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Digital Marketting">
+                                        <label>Digital Marketting</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Web Development">
+                                        <label>Web Development</label>
+                                    </div>
+                                </li>
+                                <li class="unit-unavail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Public Speaking">
+                                        <label>Public Speaking</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="V.B. Programming">
+                                        <label>V.B. Programming</label>
+                                    </div>
+                                </li>
+                                <li class="unit-unavail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Blockchains">
+                                        <label>Blockchains</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Database (DBMS)">
+                                        <label>Database (DBMS)</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Project Management">
+                                        <label>Project Management</label>
+                                    </div>
+                                </li>
+                                <li class="unit-avail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Video Editing (MM)">
+                                        <label>Video Editing (MM)</label>
+                                    </div>
+                                </li>
+                                <li class="unit-unavail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="Graphics">
+                                        <label>Graphics</label>
+                                    </div>
+                                </li>
+                                <li class="unit-unavail-item">
+                                    <div class="item-grouping">
+                                        <input type="radio" name="course" value="CRM & HRM">
+                                        <label>CRM & HRM</label>
+                                    </div>
+                                </li>
                             </div>
+                        </ul>
+                        <div class="legend-box">
+                            <span class="review-more">
+                                <h2> Which utilities would you love to see on ONET upon launch?</h2>
+                            </span>
+                            <fieldset>
+                                <legend>Recommend:👇</legend>
+                                <div class="legend-options">
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities"
+                                            value="Staking"><label>Staking</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="Quiz [T2E]"><label>Quiz
+                                            [T2E]</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities"
+                                            value="Adverts"><label>Adverts</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value=""><label>Swapping</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="POW (POG)"><label>POW
+                                            (POG)</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities"
+                                            value="D-Apps"><label>D-Apps</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value=""><label>Marketing</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="DeFi"><label>DeFi</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="DAO"><label>DAO</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="Mining (P2E)"><label>Mining
+                                            (P2E)</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities"
+                                            value="Hackathon"><label>Hackathon</label><br />
+                                    </div>
+                                    <div class="option-box">
+                                        <input type="checkbox" name="utilities" value="Shows"><label>Shows</label><br />
+                                    </div>
+                                </div>
 
-                            <!-- <label><input type="checkbox" name="option" value=""> Option </label><br /> -->
-                        </fieldset>
+                                <!-- <label><input type="checkbox" name="option" value=""> Option </label><br /> -->
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="recomend-box">
+                        <h3>
+                            Would you recommend Onet Upskill to a friend?
+                        </h3>
+                        <div class="recomend">
+                            <div class="recomend-item">
+                                <input type="radio" name="radio2"><label for="Yes">Yes</label>
+                            </div>
+                            <div class="recomend-item">
+                                <input type="radio" name="radio2"><label for="No">No</label>
+                            </div>
+                            <div class="recomend-item">
+                                <input type="radio" name="radio2"><label for="Maybe">Maybe</label>
+                            </div>
+                        </div>
+                        <div class="comment-area">
+                            <p><em>Any complaints or reviews, Drop your comment below?</em></p>
+                            <textarea name="menu" class="user-comment"></textarea>
+                        </div>
+                        <!-- already have an account?... <a href="account.html">Signin</a><br /> -->
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit" class="cta-button">
+                            Submit
+                        </button>
+                        <hr> <br /><br />
                     </div>
                 </div>
-                <div class="recomend-box">
-                    <h3>
-                        Would you recommend Onet Upskill to a friend?
-                    </h3>
-                    <div class="recomend">
-                        <div class="recomend-item">
-                            <input type="radio" name="radio2"><label for="Yes">Yes</label>
-                        </div>
-                        <div class="recomend-item">
-                            <input type="radio" name="radio2"><label for="No">No</label>
-                        </div>
-                        <div class="recomend-item">
-                            <input type="radio" name="radio2"><label for="Maybe">Maybe</label>
-                        </div>
-                    </div>
-                    <div class="comment-area">
-                        <p><em>Any complaints or reviews, Drop your comment below?</em></p>
-                        <textarea name="menu" class="user-comment"></textarea>
-                    </div>
-                    <!-- already have an account?... <a href="account.html">Signin</a><br /> -->
-                </div>
-                <!-- <div class="btn-box">
-                    <button type="submit" class="cta-button">
-                        Submit
-                    </button>
-                    <hr> <br /><br />
-                </div> -->
-
-
             </div>
-            <footer class=" footerclass">
-                <h4>&copy; Copyright | ONET (2019 - 2025)</h4>
-            </footer>
-
-            <script src="./Scripts/script.js" type="text/javascript" defer></script>
+        </form>
+        <footer class=" footerclass">
+            <h4>&copy; Copyright | ONET (2019 - 2025)</h4>
+        </footer>
+    </div>
+    <script src="./Scripts/script.js" type="text/javascript" defer></script>
 </body>
 
 </html>
